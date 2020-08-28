@@ -1,0 +1,114 @@
+RENKON
+
+Pseudo Code
+
+Header : Algorithm for Renkon.
+
+Declarations: Erate(float) and N(integer) are vectors of size 25; K, num, z are integer variables; A is a float variable.
+
+Body:
+
+
+PrintingData(Erate, N)
+
+
+1.[Display the Values with names]
+   
+   Repeat for K<—1 to 25
+         Write ( K,”  “, Erate[K], “  “ ,N[K] )
+
+2.[Return to invoking routine]
+    
+    Return                                                  
+
+
+CalcDisp(A, num, z)
+
+1.[Result calculation]
+   
+  if ( z=1 )
+  
+  then Write ( ‘The result is ’ A*Erate[num] )
+
+      else if ( z=2 )
+ 
+             then Write ( ‘The result is ‘ A/Erate[num] )
+  
+           end if
+ 
+   end if
+
+2.[Update details]
+
+    Write ( ‘Last updated on Aug 28, 2020, 13:36:48 IST’ )
+  
+3.[Return to invoking routine]
+    
+    Return                                                  
+
+
+
+
+Algorithm:
+
+1.[Taking the exchange rate data]
+   
+   Erate[1]   <— 0.013650, N[1]   <—  “I/US”
+   Erate[2]   <— 0.011459, N[2]   <—  “I/EURO”
+   Erate[3]   <— 0.010254, N[3]   <—  “I/B”
+   Erate[4]   <— 0.018588, N[4]   <—  “I/AUS”
+   Erate[5]   <— 0.017822, N[5]   <—  “I/CAN”
+   
+   Erate[6]   <— 0.840753, N[6]   <—  “US/EURO"
+   Erate[7]   <— 0.752582, N[7]   <—  “US/B”
+   Erate[8]   <— 1.362904, N[8]   <—  “US/AUS”
+   Erate[9]   <— 1.306687, N[9]   <—  “US/CAN”
+   Erate[10] <— 6.863338, N[10] <—  “US/PRC”
+   
+   Erate[11] <— 0.122494, N[11] <—  “PRC/EURO”
+   Erate[12] <— 0.109621, N[12] <—  “PRC/B”
+   Erate[13] <— 10.66856, N[13] <—  “PRC/I”
+   Erate[14] <— 0.198542, N[14] <— “PRC/AUS”
+   Erate[15] <— 0.190379, N[15] <—  “PRC/CAN”
+   
+   Erate[16] <— 0.009487, N[16] <—  “JAP/US"
+   Erate[17] <— 0.007973, N[17] <—  “JAP/EURO"
+   Erate[18] <— 0.007136, N[18] <—  “JAP/B”
+   Erate[19] <— 0.012921, N[19] <—  “JAP/AUS”
+   Erate[20] <— 0.694782, N[20] <—  “JAP/I”
+  
+   Erate[21] <— 1.117456, N[21] <—  “B/EURO”
+   Erate[22] <— 1.811053, N[22] <—  “B/AUS”
+   Erate[23] <— 1.738038, N[23] <—  “B/CAN”
+   Erate[24] <— 1.201374, N[24] <—  “B/SWISS”
+   Erate[25] <— 1.807283, N[25] <—  “B/SNG”
+
+2.[Displaying values and names]
+   
+    Call PrintingData(Erate, N)
+
+3.[Reading amount]
+   
+  Write ( “Please enter the amount” )
+   
+  Read(A)
+
+4.[Reading conversion number]
+  
+  Write ( “Enter the conversion number” )
+  
+  Read(num)
+
+5.[Reading Conversion Decision]
+ 
+   Write ( “A/B : Enter 1 to convert from A to B; Enter 2 to convert from B to A” )
+
+   Read(z)
+
+6.[Calculate and display results]
+
+   Call CalcDisp(A, num, z)
+
+7.Halt                                                                 
+
+
