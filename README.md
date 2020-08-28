@@ -61,7 +61,7 @@ There are multiple tasks that ought to be done for successful completion of the 
 
 
 **Pseudo code:**
-`Attached as a separate file`
+`https://github.com/Ritwik510/RenkonFiles/blob/master/Psuedo.txt`
 
 **C-code:**
-`Attached as a separate file`
+`https://github.com/Ritwik510/RenkonFiles/blob/master/SourceRenkon.c`
