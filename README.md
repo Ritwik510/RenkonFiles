@@ -17,15 +17,15 @@ Also, Renkon will only be designed to work as a basic currency converter and wil
 
 **Performance Characteristics:**
 
-Should offer brisk operation
+     Should offer brisk operation
 
-Should be easy to use
+     Should be easy to use
 
-Should be accurate*
+     Should be accurate*
 
-Should be absolutely reliable*
+     Should be absolutely reliable*
 
-Should be effortless to handle
+     Should be effortless to handle
 
 `*when Renkon is updated to latest market rates`
 
@@ -68,13 +68,13 @@ There are multiple tasks that ought to be done for successful completion of the 
 
 **PROGRAM SPECIFICATIONS:**
 
-Working range for entered Amount(long double)-> Min: 2.22507e-308 and Max: 1.79769e+308
-Working range for Currency numbers(int)-> Min: -2147483648 and Max: 2147483647
-Important: 
-Inputs other than numbers will terminate the program.
-The Program has been protected from entering into any kind of infinite loop.
-Entering invalid values as input to the program, more than 15 times, results in self-termination.
-Any unusual activity will result in immediate termination of the program so as to prevent an infinite loop/crash.
+    Working range for entered Amount(long double)-> Min: 2.22507e-308 and Max: 1.79769e+308
+    Working range for Currency numbers(int)-> Min: -2147483648 and Max: 2147483647
+    Important: 
+    Inputs other than numbers will terminate the program.
+    The Program has been protected from entering into any kind of infinite loop.
+    Entering invalid values as input to the program, more than 15 times, results in self-termination.
+    Any unusual activity will result in immediate termination of the program so as to prevent an infinite loop/crash.
 
 
 # Software Tester:
