@@ -1,42 +1,45 @@
+
 RENKON
 
-Pseudo Code
+Pseudo code
+
+
 
 Header : Algorithm for Renkon.
 
-Declarations: str(char) and val(long double) are vectors of size 25 and 15 respectively; k, num1, num2 are integer variables; A, temp1, temp2 are long double variables.
+Declarations: str(char) and val(long double) are vectors of size 25 and 15 respectively;  num1, num2 are integer variables; A, result are long double variables.
 
 
 
-ReadCurrencies()
+Function ReadCurrencies(): k is a local integer variable.
 
 
 1.[Read Different Currencies from a file present in system ]
    
    [Currency_names consists of names of different currencies and corresponding currency numbers]
    
-  Open Currency_names file for input
+   Open Currency_names file for input
  
-  Read from Currency_names into str
+   Repeat thru step 1.2 while not eof
 
- 2.[Write str values]
- 
-    Repeat step 3 for k <— 1 to 25
+   1.1.Read from Currency_names into str
+
+              Repeat step 1.2 for k <— 1 to 25
      
- 3.           Write(str[k])
+              1.2.          Write(str[k])
    
  
-4.[Close file]
+2.[Close file]
 
     Close Currency_names file
  
 
-4.[Return to invoking routine]
+3.[Return to invoking routine]
     
     Return                                                  
 
 
-ReadExValues()
+Function ReadExValues():
 
 1.[Open file]
 
@@ -58,13 +61,13 @@ ReadExValues()
     Return                                                  
 
 
-CalcDisp(A, num1,num2, str)
+Function CalcDisp(A, num1, num2, val): A is a long double variable; num1, num2 are two integer variables; val is a long double vector of size 15; temp1 ,temp2 are two local long double variables.
 
 1.[Result calculation]
    
-   temp1 <— A/( str(num1))
+   temp1 <— A/( val(num1))
    
-   temp2 <— temp1 * str(num2)
+   temp2 <— temp1 * val(num2)
 
 2.[Return to invoking routine and return temp2]
     
@@ -77,11 +80,11 @@ Algorithm:
 
 1.[Write names of different currencies and corresponding currency numbers]
 
-    Call ReadExValues()
-
-2.[Load Currency_names file’s content into str]
-  
     Call ReadCurrencies()
+
+2.[Load Currency_names file’s content into val]
+  
+    Call ReadExValues()
 
 3.[Read Amount]
    
@@ -97,13 +100,14 @@ Algorithm:
 
 6.[Calculate result]
 
-     result <— Call CalcDisp(A, num1, num2, str)
+     result <— Call CalcDisp(A, num1, num2, val)
 
 7.[Write result]
 
     Write(result)
 
 8.Halt                                                                                                                         
+
 
 
 
